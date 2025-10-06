@@ -54,3 +54,18 @@ const AddBoardBox = styled.div`
     }
   }
 `;
+
+const AddButton = styled.button`
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  color: ${(props) => props.theme.boardColor};
+  padding: 8px 12px;
+  background-color: #5b8ac7;
+  &:hover {
+    cursor: pointer;
+    background-color: #74a7eb;
+    transition: background-color 0.1s ease-in-out;
+  }
+`;
