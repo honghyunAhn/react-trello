@@ -69,3 +69,12 @@ const AddButton = styled.button`
     transition: background-color 0.1s ease-in-out;
   }
 `;
+const X = styled.div`
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  &:hover {
+    background-color: #272f27;
+    cursor: pointer;
+  }
+`;
