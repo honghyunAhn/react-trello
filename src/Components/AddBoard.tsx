@@ -78,3 +78,25 @@ const X = styled.div`
     cursor: pointer;
   }
 `;
+interface IForm {
+  boardName: string;
+}
+
+function AddBoard() {
+  const makeBoard = useSetRecoilState(toDoState);
+  const [isToggle, setIsToggle] = useState(false);
+  const { register, setValue, handleSubmit } = useForm<IForm>();
+  const onValid = ({ boardName }: IForm) => {
+    if (!boardName) return;
+    makeBoard((allBoards) => {
+      return {
+        ...allBoards,
+        [boardName.toString()]: [],
+      };
+    });
+    setValue("boardName", "");
+    setIsToggle((v) => !v);
+  };
+}
+
+export default AddBoard;
