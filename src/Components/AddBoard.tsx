@@ -97,6 +97,24 @@ function AddBoard() {
     setValue("boardName", "");
     setIsToggle((v) => !v);
   };
+
+  const onClick = () => {
+    setIsToggle((v) => !v);
+  };
+
+  return isToggle ? (
+    <AddBoardBox>
+      <form onSubmit={handleSubmit(onValid)}>
+        <input
+          {...register("boardName", { required: true })}
+          placeholder="Enter board title"
+          type="text"
+        />
+      </form>
+    </AddBoardBox>
+  ) : (
+    <ToggleBtn onClick={onClick}>+ Add a board</ToggleBtn>
+  );
 }
 
 export default AddBoard;
