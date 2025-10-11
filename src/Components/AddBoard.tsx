@@ -110,6 +110,13 @@ function AddBoard() {
           placeholder="Enter board title"
           type="text"
         />
+
+        <Wrapper>
+          <AddButton onSubmit={handleSubmit(onValid)}>Add board</AddButton>
+          <X onClick={onClick}>
+            <span>✕</span>
+          </X>
+        </Wrapper>
       </form>
     </AddBoardBox>
   ) : (
