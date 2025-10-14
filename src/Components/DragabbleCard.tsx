@@ -2,7 +2,12 @@ import React from "react";
 import { Draggable } from "react-beautiful-dnd";
 import styled from "styled-components";
 
-const Card = styled.div``;
+const Card = styled.div`
+  border-radius: 10px;
+  padding: 10px;
+  background-color: ${(props) => props.theme.cardColor};
+  margin-bottom: 10px;
+`;
 
 interface IDraggableCardProps {
   toDoId: number;
