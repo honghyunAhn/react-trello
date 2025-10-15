@@ -7,6 +7,13 @@ const Card = styled.div`
   padding: 10px;
   background-color: ${(props) => props.theme.cardColor};
   margin-bottom: 10px;
+  &:hover {
+    box-shadow: 0 0 0 2px #84b8fd inset;
+  }
+  &.dragging {
+    background-color: rgba(94, 94, 94, 0.589);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
 `;
 
 interface IDraggableCardProps {
