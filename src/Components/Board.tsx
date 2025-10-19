@@ -18,3 +18,13 @@ const Wrapper = styled.div`
     filter: drop-shadow(0 0 10px #053d5f);
   }
 `;
+
+const Header = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 6px;
+`;
