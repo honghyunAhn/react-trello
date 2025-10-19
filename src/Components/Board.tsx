@@ -28,3 +28,10 @@ const Header = styled.div`
   margin-bottom: 10px;
   padding: 0 6px;
 `;
+const DeleteBoard = styled.div`
+  border-radius: 5px;
+  height: 22px;
+  width: 22px;
+  text-align: center;
+  font-weight: 700;
+`;
