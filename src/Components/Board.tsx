@@ -34,4 +34,9 @@ const DeleteBoard = styled.div`
   width: 22px;
   text-align: center;
   font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(255, 58, 58, 0.582);
+  }
 `;
