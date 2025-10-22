@@ -40,3 +40,8 @@ const DeleteBoard = styled.div`
     background-color: rgba(255, 58, 58, 0.582);
   }
 `;
+const Title = styled.h2`
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+`;
