@@ -45,3 +45,8 @@ const Title = styled.h2`
   font-weight: 600;
   font-size: 18px;
 `;
+
+interface IAreaProps {
+  $isDraggingFromThis: boolean;
+  $isDraggingOver: boolean;
+}
