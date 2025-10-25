@@ -50,3 +50,5 @@ interface IAreaProps {
   $isDraggingFromThis: boolean;
   $isDraggingOver: boolean;
 }
+
+const Area = styled.div<IAreaProps>``;
