@@ -52,3 +52,9 @@ interface IAreaProps {
 }
 
 const Area = styled.div<IAreaProps>``;
+
+interface IBoardProps {
+  toDos: IToDo[];
+  boardId: string;
+  index: number;
+}
