@@ -58,3 +58,7 @@ interface IBoardProps {
   boardId: string;
   index: number;
 }
+
+interface IForm {
+  toDo: string;
+}
