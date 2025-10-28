@@ -62,3 +62,7 @@ interface IBoardProps {
 interface IForm {
   toDo: string;
 }
+
+const Form = styled.form`
+  width: 100%;
+`;
