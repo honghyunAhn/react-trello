@@ -66,3 +66,11 @@ interface IForm {
 const Form = styled.form`
   width: 100%;
 `;
+const AddBtn = styled.div`
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  color: ${(props) => props.theme.textColor};
+`;
