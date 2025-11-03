@@ -73,4 +73,9 @@ const AddBtn = styled.div`
   font-weight: 600;
   border-radius: 10px;
   color: ${(props) => props.theme.textColor};
+  &:hover {
+    background-color: #272f27;
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+  }
 `;
