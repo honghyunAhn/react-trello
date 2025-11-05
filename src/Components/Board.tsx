@@ -79,3 +79,9 @@ const AddBtn = styled.div`
     cursor: pointer;
   }
 `;
+const AddCardContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
