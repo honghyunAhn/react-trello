@@ -84,4 +84,16 @@ const AddCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  textarea {
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    height: 4em;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: ${(props) => props.theme.cardColor};
+    color: ${(props) => props.theme.textColor};
+  }
 `;
