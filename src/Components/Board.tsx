@@ -95,5 +95,11 @@ const AddCardContainer = styled.div`
     font-weight: 600;
     background-color: ${(props) => props.theme.cardColor};
     color: ${(props) => props.theme.textColor};
+    &:focus {
+      font-weight: 200;
+      font-size: 16px;
+      font-weight: 600;
+      outline: none;
+    }
   }
 `;
