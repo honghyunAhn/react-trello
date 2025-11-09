@@ -103,3 +103,15 @@ const AddCardContainer = styled.div`
     }
   }
 `;
+const AddCardBtnContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  span {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 10px;
+    border-radius: 5px;
+  }
+`;
