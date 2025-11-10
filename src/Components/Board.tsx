@@ -119,3 +119,10 @@ const AddCardBtnContainer = styled.div`
     }
   }
 `;
+const AddCardBtn = styled.button`
+  font-weight: 600;
+  padding: 8px 12px;
+  background-color: #5b8ac7;
+  border-radius: 6px;
+  color: ${(props) => props.theme.boardColor};
+`;
