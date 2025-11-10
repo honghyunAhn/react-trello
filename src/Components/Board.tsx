@@ -113,5 +113,9 @@ const AddCardBtnContainer = styled.div`
     font-weight: 700;
     padding: 8px 10px;
     border-radius: 5px;
+    &:hover {
+      background-color: #272f27;
+      cursor: pointer;
+    }
   }
 `;
