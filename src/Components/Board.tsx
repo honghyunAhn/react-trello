@@ -126,3 +126,9 @@ const AddCardBtn = styled.button`
   border-radius: 6px;
   color: ${(props) => props.theme.boardColor};
 `;
+
+function Board({ toDos, boardId, index }: IBoardProps) {
+  const [toDo, setToDos] = useRecoilState(toDoState);
+  const [toggle, setToggle] = useState(false);
+  const { register, setValue, handleSubmit } = useForm<IForm>();
+}
