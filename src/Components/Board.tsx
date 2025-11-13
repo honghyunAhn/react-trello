@@ -125,6 +125,11 @@ const AddCardBtn = styled.button`
   background-color: #5b8ac7;
   border-radius: 6px;
   color: ${(props) => props.theme.boardColor};
+  &:hover {
+    cursor: pointer;
+    background-color: #74a7eb;
+    transition: background-color 0.1s ease-in-out;
+  }
 `;
 
 function Board({ toDos, boardId, index }: IBoardProps) {
