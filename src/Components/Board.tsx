@@ -136,4 +136,10 @@ function Board({ toDos, boardId, index }: IBoardProps) {
   const [toDo, setToDos] = useRecoilState(toDoState);
   const [toggle, setToggle] = useState(false);
   const { register, setValue, handleSubmit } = useForm<IForm>();
+  const onClick = () => {
+    setToDos((allBoards) => {
+      const boardIds = Object.keys(allBoards).filter((v) => v !== boardId);
+      return reorderBoards;
+    });
+  };
 }
