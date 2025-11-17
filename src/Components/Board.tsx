@@ -139,8 +139,10 @@ function Board({ toDos, boardId, index }: IBoardProps) {
   const onClick = () => {
     setToDos((allBoards) => {
       const boardIds = Object.keys(allBoards).filter((v) => v !== boardId);
-      const reorderBoards = boardIds.reduce((acc, boardId) => {},
-      {} as IToDoState);
+      const reorderBoards = boardIds.reduce((acc, boardId) => {
+        acc[boardId] = allBoards[boardId];
+        return acc;
+      }, {} as IToDoState);
       return reorderBoards;
     });
   };
