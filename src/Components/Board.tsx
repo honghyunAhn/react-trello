@@ -146,4 +146,8 @@ function Board({ toDos, boardId, index }: IBoardProps) {
       return reorderBoards;
     });
   };
+
+  const onValid = ({ toDo }: IForm) => {};
 }
+
+export default Board;
