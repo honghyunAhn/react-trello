@@ -147,7 +147,12 @@ function Board({ toDos, boardId, index }: IBoardProps) {
     });
   };
 
-  const onValid = ({ toDo }: IForm) => {};
+  const onValid = ({ toDo }: IForm) => {
+    const newToDo = {
+      id: Date.now(),
+      text: toDo,
+    };
+  };
 }
 
 export default Board;
