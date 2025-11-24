@@ -152,7 +152,6 @@ function Board({ toDos, boardId, index }: IBoardProps) {
       id: Date.now(),
       text: toDo,
     };
+    setToDos((allBoards) => {});
   };
 }
-
-export default Board;
