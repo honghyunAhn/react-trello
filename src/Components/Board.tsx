@@ -152,6 +152,11 @@ function Board({ toDos, boardId, index }: IBoardProps) {
       id: Date.now(),
       text: toDo,
     };
-    setToDos((allBoards) => {});
+    setToDos((allBoards) => {
+      return {
+        ...allBoards,
+        [boardId]: [...allBoards[boardId], newToDo],
+      };
+    });
   };
 }
