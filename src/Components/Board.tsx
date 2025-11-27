@@ -158,5 +158,6 @@ function Board({ toDos, boardId, index }: IBoardProps) {
         [boardId]: [...allBoards[boardId], newToDo],
       };
     });
+    setValue("toDo", "");
   };
 }
