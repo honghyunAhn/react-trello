@@ -160,4 +160,5 @@ function Board({ toDos, boardId, index }: IBoardProps) {
     });
     setValue("toDo", "");
   };
+  useEffect(() => {});
 }
