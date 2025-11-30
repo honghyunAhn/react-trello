@@ -162,3 +162,5 @@ function Board({ toDos, boardId, index }: IBoardProps) {
   };
   useEffect(() => {});
 }
+
+export default Board;
