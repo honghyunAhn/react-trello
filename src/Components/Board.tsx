@@ -160,7 +160,7 @@ function Board({ toDos, boardId, index }: IBoardProps) {
     });
     setValue("toDo", "");
   };
-  useEffect(() => {});
+  useEffect(() => {
+    saveToDos(toDo);
+  }, [toDo]);
 }
-
-export default Board;
