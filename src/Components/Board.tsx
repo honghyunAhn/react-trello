@@ -163,4 +163,7 @@ function Board({ toDos, boardId, index }: IBoardProps) {
   useEffect(() => {
     saveToDos(toDo);
   }, [toDo]);
+  return <Draggable draggableId={boardId} index={index}></Draggable>;
 }
+
+export default Board;
