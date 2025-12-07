@@ -169,6 +169,7 @@ function Board({ toDos, boardId, index }: IBoardProps) {
         <Wrapper>
           <Header {...magic.dragHandleProps}>
             <Title>{boardId}</Title>
+            <DeleteBoard onClick={() => onClick()}>✕</DeleteBoard>
           </Header>
         </Wrapper>
       )}
