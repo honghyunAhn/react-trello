@@ -167,7 +167,10 @@ function Board({ toDos, boardId, index }: IBoardProps) {
     <Draggable draggableId={boardId} index={index}>
       {(magic, snapshot) => (
         <Wrapper>
-          <Header {...magic.dragHandleProps}></Header>
+          <Header {...magic.dragHandleProps}>
+            <Title>{boardId}</Title>
+            <DeleteBoard onClick={() => onClick()}>✕</DeleteBoard>
+          </Header>
         </Wrapper>
       )}
     </Draggable>
