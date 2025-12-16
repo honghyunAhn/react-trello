@@ -171,7 +171,10 @@ function Board({ toDos, boardId, index }: IBoardProps) {
             <Title>{boardId}</Title>
             <DeleteBoard onClick={() => onClick()}>✕</DeleteBoard>
           </Header>
-          <Droppable droppableId={boardId}></Droppable>
+          <Droppable droppableId={boardId}>
+            {(magic, info) => (
+            )}
+          </Droppable>
         </Wrapper>
       )}
     </Draggable>
