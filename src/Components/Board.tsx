@@ -178,7 +178,10 @@ function Board({ toDos, boardId, index }: IBoardProps) {
                 $isDraggingFromThis={Boolean(info.draggingFromThisWith)}
                 ref={magic.innerRef}
                 {...magic.droppableProps}
-              ></Area>
+              >
+                {toDos.map((toDo, index) => (
+                ))}
+              </Area>
             )}
           </Droppable>
         </Wrapper>
