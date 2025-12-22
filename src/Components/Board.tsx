@@ -180,6 +180,7 @@ function Board({ toDos, boardId, index }: IBoardProps) {
                 {...magic.droppableProps}
               >
                 {toDos.map((toDo, index) => (
+                  <DraggableCard />
                 ))}
               </Area>
             )}
