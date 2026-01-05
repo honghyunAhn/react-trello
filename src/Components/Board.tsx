@@ -166,7 +166,10 @@ function Board({ toDos, boardId, index }: IBoardProps) {
   return (
     <Draggable draggableId={boardId} index={index}>
       {(magic, snapshot) => (
-        <Wrapper className={snapshot.isDragging ? "dragging" : ""}>
+        <Wrapper
+          className={snapshot.isDragging ? "dragging" : ""}
+          ref={magic.innerRef}
+        >
           <Header {...magic.dragHandleProps}>
             <Title>{boardId}</Title>
             <DeleteBoard onClick={() => onClick()}>✕</DeleteBoard>
