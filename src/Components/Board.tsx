@@ -169,6 +169,7 @@ function Board({ toDos, boardId, index }: IBoardProps) {
         <Wrapper
           className={snapshot.isDragging ? "dragging" : ""}
           ref={magic.innerRef}
+          {...magic.draggableProps}
         >
           <Header {...magic.dragHandleProps}>
             <Title>{boardId}</Title>
