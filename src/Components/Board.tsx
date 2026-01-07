@@ -194,6 +194,7 @@ function Board({ toDos, boardId, index }: IBoardProps) {
               </Area>
             )}
           </Droppable>
+          <Form></Form>
         </Wrapper>
       )}
     </Draggable>
