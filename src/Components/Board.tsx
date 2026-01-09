@@ -194,7 +194,10 @@ function Board({ toDos, boardId, index }: IBoardProps) {
               </Area>
             )}
           </Droppable>
-          <Form onSubmit={handleSubmit(onValid)}></Form>
+          <Form onSubmit={handleSubmit(onValid)}>
+            {toggle ? (
+            )}
+          </Form>
         </Wrapper>
       )}
     </Draggable>
