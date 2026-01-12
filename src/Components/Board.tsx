@@ -196,9 +196,9 @@ function Board({ toDos, boardId, index }: IBoardProps) {
           </Droppable>
           <Form onSubmit={handleSubmit(onValid)}>
             {toggle ? (
-              <AddCardContainer>
-              </AddCardContainer>
+              <AddCardContainer></AddCardContainer>
             ) : (
+              <AddBtn onClick={() => setToggle(true)}>+Add a card</AddBtn>
             )}
           </Form>
         </Wrapper>
