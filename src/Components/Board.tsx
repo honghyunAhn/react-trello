@@ -197,7 +197,10 @@ function Board({ toDos, boardId, index }: IBoardProps) {
           <Form onSubmit={handleSubmit(onValid)}>
             {toggle ? (
               <AddCardContainer>
-                <textarea {...register("toDo", { required: true })} />
+                <textarea
+                  {...register("toDo", { required: true })}
+                  placeholder={`Add task on ${boardId}`}
+                />
               </AddCardContainer>
             ) : (
               <AddBtn onClick={() => setToggle(true)}>+Add a card</AddBtn>
