@@ -201,6 +201,7 @@ function Board({ toDos, boardId, index }: IBoardProps) {
                   {...register("toDo", { required: true })}
                   placeholder={`Add task on ${boardId}`}
                 />
+                <AddCardBtnContainer></AddCardBtnContainer>
               </AddCardContainer>
             ) : (
               <AddBtn onClick={() => setToggle(true)}>+Add a card</AddBtn>
