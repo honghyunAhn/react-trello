@@ -202,7 +202,7 @@ function Board({ toDos, boardId, index }: IBoardProps) {
                   placeholder={`Add task on ${boardId}`}
                 />
                 <AddCardBtnContainer>
-                  <AddCardBtn></AddCardBtn>
+                  <AddCardBtn type="submit"></AddCardBtn>
                 </AddCardBtnContainer>
               </AddCardContainer>
             ) : (
