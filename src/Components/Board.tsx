@@ -203,6 +203,7 @@ function Board({ toDos, boardId, index }: IBoardProps) {
                 />
                 <AddCardBtnContainer>
                   <AddCardBtn type="submit">Add card</AddCardBtn>
+                  <span></span>
                 </AddCardBtnContainer>
               </AddCardContainer>
             ) : (
